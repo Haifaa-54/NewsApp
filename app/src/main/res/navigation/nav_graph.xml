@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/palestinianNewsFragment">
+
+    <fragment
+        android:id="@+id/palestinianNewsFragment"
+        android:name="com.example.newsapp.PalestinianNewsFragment"
+        android:label="أخبار فلسطينية"
+        tools:layout="@layout/fragment_palestinian_news" >
+        <action
+            android:id="@+id/action_palestinianNewsFragment_to_newsItemListFragment"
+            app:destination="@id/newsItemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/worldNewsFragment"
+        android:name="com.example.newsapp.WorldNewsFragment"
+        android:label="اخبار عالمية"
+        tools:layout="@layout/fragment_world_news" >
+        <action
+            android:id="@+id/action_worldNewsFragment_to_newsItemListFragment"
+            app:destination="@id/newsItemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="com.example.newsapp.EntertainmentFragment"
+        android:label="أخبار ترفيهية"
+        tools:layout="@layout/fragment_entertainment" >
+        <action
+            android:id="@+id/action_entertainmentFragment_to_newsItemListFragment"
+            app:destination="@id/newsItemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/islamicNewsFragment"
+        android:name="com.example.newsapp.IslamicNewsFragment"
+        android:label="اسلاميات"
+        tools:layout="@layout/fragment_islamic_news" >
+        <action
+            android:id="@+id/action_islamicNewsFragment_to_newsItemListFragment"
+            app:destination="@id/newsItemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsItemListFragment"
+        android:name="com.example.newsapp.newsItemListFragment"
+        android:label="{newsTitle}"
+        tools:layout="@layout/fragment_news_item_list" >
+        <argument
+            android:name="newsTitle"
+            app:argType="string" />
+        <argument
+            android:name="newsImage"
+            app:argType="string" />
+        <argument
+            android:name="newsUrl"
+            app:argType="string" />
+    </fragment>
+</navigation>

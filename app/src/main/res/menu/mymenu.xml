@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/palestinianNewsFragment" android:title="أخبار فلسطينية" android:icon="@drawable/ic_palestine" android:iconTint="@color/white"/>
+    <item android:id="@+id/worldNewsFragment" android:title="اخبار عالمية" android:icon="@drawable/ic_news" android:iconTint="@color/white"/>
+    <item android:id="@+id/islamicNewsFragment" android:title="اسلاميات" android:icon="@drawable/ic_islamicic" android:iconTint="@color/white"/>
+    <item android:id="@+id/entertainmentFragment" android:title="اخبار ترفيهية" android:icon="@drawable/ic_musicnote" android:iconTint="@color/white" />
+</menu>
